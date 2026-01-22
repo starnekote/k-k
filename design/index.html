@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html class="light" lang="uk">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>K&amp;K Studio Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2c6d49",
+                        "accent-coral": "#FFC9B9",
+                        "accent-orange": "#D68C45",
+                        "background-light": "#fefef6",
+                        "background-dark": "#18201c",
+                    },
+                    fontFamily: {
+                        "display": ["Epilogue", "sans-serif"],
+                        "sans": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-[#131614] dark:text-white transition-colors duration-300">
+    <!-- Sticky Header -->
+    <header
+        class="sticky top-0 z-50 flex items-center bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md p-4 justify-between border-b border-primary/10">
+        <h2 class="text-primary dark:text-white text-lg font-black leading-tight tracking-[-0.015em] flex-1">
+            K&amp;K <span class="font-normal opacity-70 italic text-sm ml-1">Studio</span>
+        </h2>
+        <div class="flex items-center gap-4">
+            <button
+                class="flex items-center justify-center rounded-full w-10 h-10 bg-primary/5 dark:bg-white/5 text-primary dark:text-white">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+    <main class="relative">
+        <!-- Hero Section -->
+        <section class="@container">
+            <div class="@[480px]:p-4">
+                <div class="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:rounded-xl items-start justify-end px-6 pb-16 relative overflow-hidden"
+                    data-alt="Modern minimalist office space with plants and warm lighting"
+                    style='background-image: linear-gradient(to top, rgba(24, 32, 28, 0.9) 0%, rgba(44, 109, 73, 0.3) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB793Y6M6adiveO50Jn6Q46Ps-3ktG8sPH14SrY_YyeCus2uYTO2kT8HPqm83DG5Mwm1hlEIuX36b8ggIuACMoMAxUU0YoOqI3JnwUA6eVrrbt38rwIa7ef4LgcWRfTW0fGuCtfT_dZJavmUAMyBAODhcZE2b-jEHWGxa3MSDWOsBgSiOd_wrZN0abNBtybW9TyuBwfwXfEKkXutiYqSBUsCqVavrMsz6orxioxp2tkmyhByg7XzIGubYCibE2-CincDh89TNLQw_dQ");'>
+                    <div class="flex flex-col gap-3 text-left max-w-md z-10">
+                        <div class="w-12 h-1 bg-accent-orange rounded-full mb-2"></div>
+                        <h1 class="text-white text-4xl font-black leading-[1.1] tracking-[-0.033em] @[480px]:text-6xl">
+                            Створюємо цифрові рішення
+                        </h1>
+                        <p class="text-white/80 text-base font-normal leading-relaxed">
+                            Ми розробляємо естетичні та функціональні сайти, що перетворюють відвідувачів на лояльних
+                            клієнтів.
+                        </p>
+                    </div>
+                    <a class="z-10 flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-white text-base font-bold transition-transform active:scale-95 shadow-lg shadow-primary/20"
+                        href="#contact">
+                        <span class="truncate">Почати проект</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- About Us Section -->
+        <section class="py-12 px-4 @container">
+            <div class="flex flex-col gap-8 items-start">
+                <div class="space-y-2">
+                    <span class="text-accent-orange text-xs font-bold uppercase tracking-widest">Про нас</span>
+                    <h2 class="text-[#131614] dark:text-white text-3xl font-bold leading-tight">Стиль та результат</h2>
+                </div>
+                <div class="grid grid-cols-1 @[640px]:grid-cols-2 gap-8 items-center">
+                    <div class="w-full aspect-square bg-center bg-no-repeat bg-cover rounded-2xl shadow-xl"
+                        data-alt="Creative team collaborating in a bright studio environment"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjszdDqtKDMWTqRZoIr_d2vCqQVGN8wQOvyRNY8qXywJVgcAfNzUNECs8rfFRglhGZByxFcIioxc52tiwcLct20picTw2LNkmuWRmi3H8pa-7c2-Y_KxgOKPbS7iXwqgYDq5IbANBoalKVRJIfmFtYhCJ3fb_RFkBKmBMRka92B_B64AuFRDZhsJQP0_E5IyruZLZggduWfwaLKMDFQ3lmbqtuyOQPV_TTYQVfNyfSJA0Cc1wgHJI7g5IIzes4SfAWvEhmb1yqJwGZ");'>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <p class="text-[#131614]/70 dark:text-white/70 text-lg leading-relaxed">
+                            K&amp;K — це не просто розробка. Це глибоке занурення у ваш бізнес для створення
+                            інструменту, який працює 24/7.
+                        </p>
+                        <div class="flex flex-col gap-4">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="p-2 bg-primary/10 dark:bg-primary/20 rounded-lg text-primary dark:text-accent-coral">
+                                    <span class="material-symbols-outlined">brush</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold dark:text-white">Авторський дизайн</h4>
+                                    <p class="text-sm opacity-70 dark:text-white/70">Унікальні інтерфейси без шаблонів.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="p-2 bg-primary/10 dark:bg-primary/20 rounded-lg text-primary dark:text-accent-coral">
+                                    <span class="material-symbols-outlined">bolt</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold dark:text-white">Швидкість та SEO</h4>
+                                    <p class="text-sm opacity-70 dark:text-white/70">Технічна досконалість для пошукових
+                                        систем.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Horizontal Swiper -->
+        <section class="py-12 bg-primary/5 dark:bg-white/5">
+            <div class="px-4 mb-6 flex justify-between items-end">
+                <div class="space-y-2">
+                    <span class="text-accent-orange text-xs font-bold uppercase tracking-widest">Портфоліо</span>
+                    <h2 class="text-2xl font-bold dark:text-white">Наші останні кейси</h2>
+                </div>
+            </div>
+            <div class="flex overflow-x-auto no-scrollbar gap-6 px-4 pb-4 snap-x">
+                <!-- Case 1 -->
+                <div class="flex-none w-[85%] @[480px]:w-[400px] snap-center">
+                    <div class="group relative rounded-2xl overflow-hidden bg-white dark:bg-background-dark shadow-md">
+                        <div class="aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                            data-alt="Minimalist fashion e-commerce website interface design"
+                            style='background-image: url("screenshot.png")'>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold mb-2 dark:text-white">InStyle Boutique</h3>
+                            <p class="text-sm opacity-60 mb-4 dark:text-white/60">E-commerce платформа для преміум
+                                бренду одягу.</p>
+                            <button
+                                class="w-full py-3 rounded-xl border border-primary/20 text-primary dark:text-accent-coral font-bold text-sm hover:bg-primary hover:text-white transition-colors">
+                                Переглянути кейс
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Case 2 -->
+                <div class="flex-none w-[85%] @[480px]:w-[400px] snap-center">
+                    <div class="group relative rounded-2xl overflow-hidden bg-white dark:bg-background-dark shadow-md">
+                        <div class="aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                            data-alt="Corporate tech dashboard UI with data visualizations"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxFfMu70J8i0YG4_VIOB9kln_V8x-iUHWZOSc47uGfdnEWvixgvxr9bAdFJ8loc20oWmNP9sRlvDI-HtzwgDPr9z1L-BNADGZJn6sJM1qYUYgqQW_ptxqcLpMgNAbKG9RKVv47iO1eKu2FwwPXYJDxW-UNDo2DbJn-SxcdHCxcXstUYk8pAGXKR9v8dD-J_AIPUjGgWQHk_fUa5qrV-2YdaHNSDRMzSIXn-QrVsbXxMzuEfEDFV49SgiPZFvpLsPLfyhhXtoLjJ4CG");'>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold mb-2 dark:text-white">TechVision ERP</h3>
+                            <p class="text-sm opacity-60 mb-4 dark:text-white/60">Корпоративний портал для управління
+                                процесами.</p>
+                            <button
+                                class="w-full py-3 rounded-xl border border-primary/20 text-primary dark:text-accent-coral font-bold text-sm hover:bg-primary hover:text-white transition-colors">
+                                Переглянути кейс
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Case 3 -->
+                <div class="flex-none w-[85%] @[480px]:w-[400px] snap-center">
+                    <div class="group relative rounded-2xl overflow-hidden bg-white dark:bg-background-dark shadow-md">
+                        <div class="aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                            data-alt="Corporate tech dashboard UI with data visualizations"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxFfMu70J8i0YG4_VIOB9kln_V8x-iUHWZOSc47uGfdnEWvixgvxr9bAdFJ8loc20oWmNP9sRlvDI-HtzwgDPr9z1L-BNADGZJn6sJM1qYUYgqQW_ptxqcLpMgNAbKG9RKVv47iO1eKu2FwwPXYJDxW-UNDo2DbJn-SxcdHCxcXstUYk8pAGXKR9v8dD-J_AIPUjGgWQHk_fUa5qrV-2YdaHNSDRMzSIXn-QrVsbXxMzuEfEDFV49SgiPZFvpLsPLfyhhXtoLjJ4CG");'>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold mb-2 dark:text-white">TechVision ERP</h3>
+                            <p class="text-sm opacity-60 mb-4 dark:text-white/60">Корпоративний портал для управління
+                                процесами.</p>
+                            <button
+                                class="w-full py-3 rounded-xl border border-primary/20 text-primary dark:text-accent-coral font-bold text-sm hover:bg-primary hover:text-white transition-colors">
+                                Переглянути кейс
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="promotions-swiper">
+                <ul class="promo-list swiper-wrapper">
+                    <?php $loop = SCF::get('promo', 7);
+                        foreach($loop as $row){?>
+                            <li class="promo swiper-slide">
+                                <div class="image">
+                                    <img src="<?php echo wp_get_attachment_url($row['promo_img'] )?>" alt="">
+                                </div>
+                                <div class="text">
+                                    <h3 class="title"><?php echo $row['promo_text']?></h3>
+                                    <div class="price">
+                                        <h1 class="non-promo-price"><?php echo $row['non_promo_price']?></h1>
+                                        <h1 class="promo-price"><?php echo $row['promo_price']?></h1>
+                                    </div>
+                                    <div class="buttons">
+                                        <a href="" class="buy"><?php echo $row['promo_btn_first']?></a>
+                                        <a href="" class="catalog"><?php echo $row['promo_btn_second']?></a>
+                                    </div>
+                                </div>
+                            </li>
+                    <?php } ?>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <!-- YouTube / Process Integration -->
+        <section class="py-16 px-4">
+            <div class="bg-background-dark text-white rounded-[2rem] p-8 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl -mr-16 -mt-16"></div>
+                <div class="relative z-10 space-y-6">
+                    <div class="space-y-2">
+                        <span class="text-accent-coral text-xs font-bold uppercase tracking-widest">Процес</span>
+                        <h2 class="text-3xl font-bold leading-tight">Як ми працюємо</h2>
+                        <p class="text-white/60 text-sm">Короткий огляд WordPress панелі, яку ми адаптуємо під кожного
+                            клієнта для зручного керування.</p>
+                    </div>
+                    <div
+                        class="relative aspect-video w-full rounded-xl overflow-hidden bg-white/10 group cursor-pointer shadow-2xl">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-colors">
+                            <div
+                                class="w-16 h-16 rounded-full bg-accent-coral text-background-dark flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-4xl fill-1">play_arrow</span>
+                            </div>
+                        </div>
+                        <div class="w-full h-full bg-center bg-cover"
+                            data-alt="Screenshot of a professional WordPress dashboard interface"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBoLQMYHIXiv_6fIvCJBLE6Ht94Ajdcrhdd7MPTSohkK1YWWFr5jnD_Tq1fMO5YuSuMQTHz4D2aUJ911vX8MKG9_Zw8HDFKwRxqZFprHkdJ3MoM4ugwCsGaX5RzwWtEySHVxUkf211gdRXhc6mXOvsvMSkdjg9_ILWTgQzvLb_LJb3aT56tN6ACqSp7_3E12iQWn6Df7S6xotoIM1Svr3Cwkupj0gM12omOZc6NkeitsRw1xb20BPaphB8xR1tZBkQYuEgOXKLlobOY");'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials -->
+        <section class="py-12 px-4">
+            <div class="text-center mb-10 space-y-2">
+                <span class="text-accent-orange text-xs font-bold uppercase tracking-widest">Відгуки</span>
+                <h2 class="text-2xl font-bold dark:text-white">Що про нас кажуть</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="bg-white dark:bg-white/5 p-6 rounded-2xl border border-primary/5 shadow-sm">
+                    <div class="flex gap-1 text-accent-orange mb-3">
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                    </div>
+                    <p class="italic text-[#131614]/80 dark:text-white/80 mb-4 leading-relaxed">
+                        "K&amp;K Studio перевершили наші очікування. Сайт вийшов не тільки красивим, а й неймовірно
+                        швидким. Продажі зросли на 30% вже в перший місяць."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">
+                            ОМ</div>
+                        <div>
+                            <p class="text-sm font-bold dark:text-white">Олександр Мельник</p>
+                            <p class="text-xs opacity-50 dark:text-white/50">CEO, EcoMarket</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-white/5 p-6 rounded-2xl border border-primary/5 shadow-sm">
+                    <div class="flex gap-1 text-accent-orange mb-3">
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                        <span class="material-symbols-outlined text-sm fill-1">star</span>
+                    </div>
+                    <p class="italic text-[#131614]/80 dark:text-white/80 mb-4 leading-relaxed">
+                        "Дуже професійний підхід до UX. Вони почули всі наші побажання і запропонували кращі рішення,
+                        про які ми навіть не замислювалися."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-10 h-10 rounded-full bg-accent-coral/30 flex items-center justify-center font-bold text-primary">
+                            ГП</div>
+                        <div>
+                            <p class="text-sm font-bold dark:text-white">Ганна Павлова</p>
+                            <p class="text-xs opacity-50 dark:text-white/50">Маркетолог, NovaTech</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Form / Footer -->
+        <section class="py-16 px-4 bg-background-light dark:bg-background-dark" id="contact">
+            <div class="bg-accent-coral/20 dark:bg-primary/10 rounded-[2.5rem] p-8 border border-accent-coral/30">
+                <div class="max-w-md mx-auto space-y-8">
+                    <div class="text-center space-y-4">
+                        <h2 class="text-3xl font-black text-primary dark:text-white leading-tight">Обговоримо ваш
+                            проект?</h2>
+                        <p class="text-[#131614]/60 dark:text-white/60">Залиште заявку, і ми передзвонимо вам протягом
+                            30 хвилин для консультації.</p>
+                    </div>
+                    <form class="space-y-4">
+                        <div class="space-y-1.5">
+                            <label
+                                class="text-xs font-bold uppercase tracking-wider text-primary/60 dark:text-white/40 ml-1">Ваше
+                                ім'я</label>
+                            <input
+                                class="w-full bg-white dark:bg-white/5 border-none rounded-xl h-14 px-5 focus:ring-2 focus:ring-primary dark:text-white placeholder:text-gray-400"
+                                placeholder="Іван Іванов" type="text" />
+                        </div>
+                        <div class="space-y-1.5">
+                            <label
+                                class="text-xs font-bold uppercase tracking-wider text-primary/60 dark:text-white/40 ml-1">Номер
+                                телефону</label>
+                            <input
+                                class="w-full bg-white dark:bg-white/5 border-none rounded-xl h-14 px-5 focus:ring-2 focus:ring-primary dark:text-white placeholder:text-gray-400"
+                                placeholder="+38 (0__) ___ __ __" type="tel" />
+                        </div>
+                        <button
+                            class="w-full h-14 bg-primary text-white rounded-xl font-bold text-lg shadow-lg shadow-primary/20 active:scale-95 transition-all mt-4"
+                            type="submit">
+                            Замовити дзвінок
+                        </button>
+                    </form>
+                    <div class="pt-8 border-t border-primary/10 flex flex-col items-center gap-4 text-center">
+                        <div class="flex gap-6">
+                            <a class="text-primary dark:text-accent-coral opacity-60 hover:opacity-100"
+                                href="#">Instagram</a>
+                            <a class="text-primary dark:text-accent-coral opacity-60 hover:opacity-100"
+                                href="#">Behance</a>
+                            <a class="text-primary dark:text-accent-coral opacity-60 hover:opacity-100"
+                                href="#">Telegram</a>
+                        </div>
+                        <p class="text-[10px] uppercase tracking-widest text-[#131614]/40 dark:text-white/30">© 2024
+                            K&amp;K Web Studio. Всі права захищені.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Fixed Anchor FAB -->
+    <a class="fixed bottom-6 right-6 w-14 h-14 bg-accent-orange text-white rounded-full flex items-center justify-center shadow-2xl z-50 animate-bounce active:scale-90 transition-transform"
+        href="#contact">
+        <span class="material-symbols-outlined text-2xl">mail</span>
+    </a>
+    <!-- Theme Switcher for Demo (hidden normally) -->
+    <button
+        class="fixed bottom-24 right-6 w-10 h-10 bg-white dark:bg-background-dark border border-primary/10 rounded-full flex items-center justify-center shadow-lg z-50"
+        onclick="document.documentElement.classList.toggle('dark')">
+        <span class="material-symbols-outlined text-xl dark:text-white">contrast</span>
+    </button>
+</body>
+
+</html>

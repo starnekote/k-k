@@ -64,21 +64,21 @@
 
                         <div class="advantages">
                             <div class="adv">
-                                <div>
-                                    <span>brush</span>
+                                <div class="img-wrapper">
+                                    <img src="assets/images/brush.png" alt="">
                                 </div>
                                 <div>
-                                    <h4>Авторський дизайн</h4>
+                                    <h2>Авторський дизайн</h2>
                                     <p>Унікальні інтерфейси без шаблонів.</p>
                                 </div>
                             </div>
 
                             <div class="adv">
-                                <div>
-                                    <span>bolt</span>
+                                <div class="img-wrapper">
+                                    <img src="assets/images/bolt.png" alt="">
                                 </div>
                                 <div>
-                                    <h4>Швидкість та SEO</h4>
+                                    <h2>Швидкість та SEO</h2>
                                     <p>Технічна досконалість для пошукових систем.</p>
                                 </div>
                             </div>
@@ -90,47 +90,142 @@
         </section>
 
         <!-- Portfolio / Swiper -->
-        <section>
-            <div>
-                <div>
-                    <span>Портфоліо</span>
+        <section class="portfolio">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Портфоліо</h2>
                     <h2>Наші останні кейси</h2>
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <div>
-                        <div
-                            data-alt="Minimalist fashion e-commerce website interface design"
-                            style='background-image: url("screenshot.png")'>
+            <div class="portfolio-swiper">
+                <ul class="portfolio-list swiper-wrapper">
+                    <li class="portfolio-single swiper-slide">
+                        <a href="">
+                            <img src="assets/images/esteticlab.png" alt="">
+                            <div class="portfolio-text">
+                                <h2>InStyle Boutique</h2>
+                                <p>E-commerce платформа для преміум бренду одягу.</p>
+                                <button>Переглянути кейс</button>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-single swiper-slide">
+                        <a href="">
+                            <img src="assets/images/esteticlab.png" alt="">
+                            <div class="portfolio-text">
+                                <h2>InStyle Boutique</h2>
+                                <p>E-commerce платформа для преміум бренду одягу.</p>
+                                <button>Переглянути кейс</button>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-single swiper-slide">
+                        <a href="">
+                            <img src="assets/images/esteticlab.png" alt="">
+                            <div class="portfolio-text">
+                                <h2>InStyle Boutique</h2>
+                                <p>E-commerce платформа для преміум бренду одягу.</p>
+                                <button>Переглянути кейс</button>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- YouTube / Process Integration -->
+        <section class="youtube">
+            <div class="container">
+                <div class="block">
+                    <div class="section-title">
+                        <h2>Процес</h2>
+                        <h2>Як ми працюємо</h2>
+                        <p>
+                            Короткий огляд WordPress панелі, яку ми адаптуємо під кожного
+                            клієнта для зручного керування.
+                        </p>
+                    </div>
+                    <a href="" class="video">
+                        <div class="play-circle">
+                            <img src="assets/images/play_arrow.png" alt="">
                         </div>
-                        <div>
-                            <h3>InStyle Boutique</h3>
-                            <p>E-commerce платформа для преміум бренду одягу.</p>
-                            <button>Переглянути кейс</button>
+                        <div class="shade">
+                            <img src="assets/images/youtube.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="reviews">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Відгуки</h2>
+                    <h2>Що про нас кажуть</h2>
+                </div>
+                <div class="review">
+                    <div class="review-wrapper">
+                        <div class="rating">
+                            <span><img src="assets/images/star.png" alt=""></span>
+                            <span><img src="assets/images/star.png" alt=""></span>
+                            <span><img src="assets/images/star.png" alt=""></span>
+                            <span><img src="assets/images/star.png" alt=""></span>
+                            <span><img src="assets/images/star.png" alt=""></span>
+                        </div>
+                        <p class="text">
+                            "K&amp;K Studio перевершили наші очікування. Сайт вийшов не тільки красивим,
+                            а й неймовірно швидким. Продажі зросли на 30% вже в перший місяць."
+                        </p>
+                        <div class="author">
+                            <div class="avatar">ОМ</div>
+                            <div>
+                                <h2 class="name">Олександр Мельник</h2>
+                                <p class="work">CEO, EcoMarket</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="review-wrapper">
+                        <div class="rating">
+                            <span><img src="assets/images/star.png" alt=""></span>
+                            <span><img src="assets/images/star.png" alt=""></span>
+                            <span><img src="assets/images/star.png" alt=""></span>
+                            <span><img src="assets/images/star.png" alt=""></span>
+                            <span><img src="assets/images/star.png" alt=""></span>
+                        </div>
+                        <p class="text">
+                            "Дуже професійний підхід до UX. Вони почули всі наші побажання
+                            і запропонували кращі рішення, про які ми навіть не замислювалися."
+                        </p>
+                        <div class="author">
+                            <div class="avatar">ГП</div>
+                            <div>
+                                <h2 class="name">Ганна Павлова</h2>
+                                <p class="work">Маркетолог, NovaTech</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <!-- Contact -->
-        <section id="contact">
-            <div>
-                <div>
-                    <div>
-                        <h2>Обговоримо ваш проект?</h2>
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-title">
+                        <h1>Обговоримо ваш проект?</h1>
                         <p>Залиште заявку, і ми передзвонимо вам протягом 30 хвилин для консультації.</p>
                     </div>
 
                     <form>
-                        <div>
+                        <div class="name">
                             <label>Ваше ім'я</label>
                             <input placeholder="Іван Іванов" type="text" />
                         </div>
 
-                        <div>
+                        <div class="phone">
                             <label>Номер телефону</label>
                             <input placeholder="+38 (0__) ___ __ __" type="tel" />
                         </div>
@@ -139,12 +234,12 @@
                     </form>
 
                     <div>
-                        <div>
+                        <div class="social">
                             <a href="#">Instagram</a>
                             <a href="#">Behance</a>
                             <a href="#">Telegram</a>
                         </div>
-                        <p>© 2024 K&amp;K Web Studio. Всі права захищені.</p>
+                        <p class="all-rights">© 2024 K&amp;K Web Studio. Всі права захищені.</p>
                     </div>
                 </div>
             </div>

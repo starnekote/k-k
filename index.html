@@ -8,17 +8,41 @@
     <title>K&K</title>
 </head>
 <body>
-<body>
+    <a href="#contact" class="mail">
+        <img src="assets/images/mail.png" alt="">
+    </a>
     <!-- Sticky Header -->
     <header>
         <div class="container">
             <h1>
                 K&amp;K <span>Studio</span>
             </h1>
-            <button>
-                <img src="assets/images/menu.png" alt="">
-            </button>
+            <div class="button-wrapper">
+                <button class="burger" aria-label="Відкрити меню" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
+        <nav class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#portfolio">Портфоліо</a></li>
+                <li><a href="#video">Відеоінструкція</a></li>
+                <li><a href="#reviews">Відгуки</a></li>
+                <li><a href="#contact">Залишити заявку</a></li>
+            </ul>
+            <div>
+                <div class="social">
+                    <a href="#">Instagram</a>
+                    <a href="#">Behance</a>
+                    <a href="#">Telegram</a>
+                </div>
+                <p class="all-rights">© 2024 K&amp;K Web Studio. Всі права захищені.</p>
+            </div>
+        </nav>
+        <div class="overlay"></div>
     </header>
 
     <main>
@@ -44,7 +68,7 @@
         </section>
 
         <!-- About Us Section -->
-        <section class="about-us">
+        <section id="about" class="about-us">
             <div class="container">
                 <div class="section-title">
                     <h2>Про нас</h2>
@@ -90,7 +114,7 @@
         </section>
 
         <!-- Portfolio / Swiper -->
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <div class="container">
                 <div class="section-title">
                     <h2>Портфоліо</h2>
@@ -134,7 +158,7 @@
             </div>
         </section>
         <!-- YouTube / Process Integration -->
-        <section class="youtube">
+        <section id="video" class="youtube">
             <div class="container">
                 <div class="block">
                     <div class="section-title">
@@ -145,7 +169,7 @@
                             клієнта для зручного керування.
                         </p>
                     </div>
-                    <a href="" class="video">
+                    <a href="https://youtu.be/Si6jlk0xdQA" class="video">
                         <div class="play-circle">
                             <img src="assets/images/play_arrow.png" alt="">
                         </div>
@@ -158,7 +182,7 @@
         </section>
 
         <!-- Reviews -->
-        <section class="reviews">
+        <section id="reviews" class="reviews">
             <div class="container">
                 <div class="section-title">
                     <h2>Відгуки</h2>
@@ -245,14 +269,9 @@
             </div>
         </section>
     </main>
-
-    <a href="#contact">
-        <span>mail</span>
-    </a>
-
-    <button onclick="document.documentElement.classList.toggle('dark')">
+    <!-- <button onclick="document.documentElement.classList.toggle('dark')">
         <span>contrast</span>
-    </button>
-</body>
-<script src="assets/js/swiper-bundle.min.js"></script>    
+    </button> -->
+<script src="assets/js/swiper-bundle.min.js"></script> 
+<script src="assets/js/main.js"></script>    
 </body></html>

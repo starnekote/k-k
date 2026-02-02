@@ -63,9 +63,17 @@ p {
     font-weight: 400;
 }
 
+body.lock {
+    overflow: hidden;
+}
+
 @media (min-width: 390px) {
     html {
         font-size: 10px;
+    }
+
+    body.lock {
+        overflow: hidden;
     }
 
     .container {
@@ -99,16 +107,116 @@ p {
         font-size: 1.4rem;
     }
 
-    header button {
+    /* Burger Menu */
+    header .button-wrapper {
+        position: fixed;
+        right: 4%;
         width: 4rem;
         height: 4rem;
         border-radius: 2rem;
         background-color: #EAF0ED;
         border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1001;
     }
 
-    header button img {
-        padding-top: 3px;
+    .burger {
+        padding: 0;
+        width: 18px;
+        height: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: none;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .burger span {
+        height: 2.4px;
+        background: #2C6D49;
+        transition: transform 0.3s ease, opacity 0.2s ease;
+    }
+
+    .burger.active span:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+    }
+
+    .burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.5);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 999;
+     }
+
+    .overlay.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+       /* Mobile Menu  */
+    .mobile-menu {
+        border: 1px solid rgba(0,0,0,0.5);
+        padding: 60px 30px;
+        width: fit-content;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        background: #FEFEF6;
+        transition: transform 0.3s ease;
+        z-index: 1000;
+    }
+
+    .mobile-menu.open {
+        transform: translateX(-100%);
+    }
+
+    .mobile-menu ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin-bottom: 30px;
+        gap: 10px;
+    }
+
+    .mobile-menu ul li a{
+        font-weight: 700;
+        font-size: 1.4rem;
+        color: #2C6D49;
+    }
+
+    .mobile-menu .social{ 
+        display: flex;
+        gap: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .mobile-menu .social * {
+        font-weight: 400;
+        font-size: 1rem;
+        color: #80A792;
+    }
+
+    .mobile-menu .all-rights {
+        font-size: 0.8rem;
+        text-align: center;
+        color: #A1A2A1;
     }
 
     /* Hero Section */
@@ -126,6 +234,9 @@ p {
         flex-direction: column;
         justify-content: end;
         align-items: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
      .hero .wrapper .text-wrapper {
@@ -526,5 +637,55 @@ p {
         font-size: 1rem;
         text-align: center;
         color: #A1A2A1;
+    }
+
+    .mail {
+        position: fixed;
+        bottom: 6%;
+        right: 6%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5.6rem;
+        height: 5.6rem;
+        background-color: #D68C45;
+        border-radius: 2.8rem;
+        z-index: 1002;
+        animation: jump 2.8s ease infinite;
+    }
+
+    .mail img {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    @keyframes jump {
+        0% { transform: translateY(0); }
+        10% { transform: translateY(-14px); }
+        20% { transform: translateY(0); }
+        30% { transform: translateY(-8px); }
+        40% { transform: translateY(0); }
+        100% { transform: translateY(0); }
+    }
+
+}
+
+@media (min-width: 512px) {
+    html {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 470px;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 706px;
     }
 }

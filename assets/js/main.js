@@ -28,3 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
   sections.forEach(section => observer.observe(section));
 
 });
+
+const button = document.querySelector('.brief-toggle');
+const brief = document.querySelector('.brief');
+
+button.addEventListener('click', () => {
+    button.classList.toggle('open');
+    brief.classList.toggle('open');
+});

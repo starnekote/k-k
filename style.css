@@ -51,7 +51,8 @@ html {
   overflow: hidden;
 }
 
-input {
+input,
+select {
     all: unset;
 }
 
@@ -218,32 +219,53 @@ body.lock {
         height: 1rem;
      }
 
-    .contact-wrapper form div input {
+    .contact-wrapper form div input,
+    .contact-wrapper form div select {
+        height: 5.6rem;
         border: none;
-        height: 5.5rem;
-        border-radius: 12px;
-        margin-bottom: 32px;
+        padding: 2.2rem 2rem 1.8rem 2rem;
+        box-sizing: border-box;
+        border-radius: 1.2rem;
+        margin-bottom: 1.6rem;
         background-color: #ffffff;
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: var(--text-dark);
      } 
 
-    .brief .contact-wrapper form div input {
-        padding-inline: 0 !important;
-     } 
+     .contact-wrapper form div input::placeholder {
+        font-size: 1.6rem;
+     }
+
+     .contact-wrapper form div input:focus::placeholder {
+        color: transparent;
+    }
 
     .contact-wrapper form div select {
-        border: none;
-        height: 5.5rem;
-        border-radius: 12px;
-        margin-bottom: 32px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding: 2rem;
      } 
 
-    .contact-wrapper form div select::placeholder {
-        padding-left: 20px;
-     } 
+     .select-wrapper {
+        position: relative;
+    }
 
-    .contact-wrapper form div input::placeholder {
-        padding-left: 20px;
-     }
+    .select-wrapper::after {
+        content: '';
+        width: 2rem;
+        height: 1rem;
+        position: absolute;
+        right: 2rem;
+        top: 44%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        background-image: url('assets/images/Vector.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        pointer-events: none;
+    }
 
     .contact-wrapper button {
         width: 100%;
@@ -295,6 +317,61 @@ body.lock {
         transform: rotate(180deg);
     }
 
+    .brief .section-title p {
+        font-size: 1.8rem;
+        color: rgba(250, 250, 250, 0.8);
+    }
+
+    .brief .section-title p span {
+        font-weight: 700;
+        color: #D68C45;
+    }
+
+    .brief label {
+        position: relative;
+    }
+
+    .brief label .tooltip-text {
+        visibility: hidden;
+        opacity: 0;
+        width: 75%;
+        background-color: #2C6E49;
+        border-radius: 5px;
+        padding: 10px;
+        position: absolute;
+        z-index: 10;
+        bottom: 150%;
+        left: 60%;
+        transform: translateX(-50%);
+        transition: opacity 0.3s, visibility 0.3s;
+        pointer-events: none;
+    }
+
+    .brief label .tooltip-text p {
+        font-size: 13px;
+        color: #fff;
+    }
+
+    .brief label .tooltip-text.is-active{
+            visibility: visible;
+            opacity: 0.9;
+        }
+
+    .brief .contact-data {
+        padding-top: 1.4rem;
+        margin-top: 1.4rem;
+        position: relative;
+    }
+
+    .brief .contact-data::before {
+        content: '';
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        bottom: 100%;
+        background-color: rgba(250, 250, 250, 0.8);
+    }
+
       /* About Us Section */
 
      .section-title {
@@ -309,6 +386,10 @@ body.lock {
     .section-title h2:last-of-type {
         font-size: 3rem;
      }
+
+    .brief .section-title h2 {
+        color: #FFFFFF;
+    }
 
      .about-us-img {
         width: 100%;
@@ -640,4 +721,13 @@ body.lock {
     .container {
         width: 706px;
     }
+
+    .brief label .tooltip-icon:hover {
+        cursor: pointer;
+    }
+
+    .brief label .tooltip-icon:hover + .tooltip-text {
+        visibility: visible;
+        opacity: 0.9;
+    } 
 }

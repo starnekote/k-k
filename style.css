@@ -704,7 +704,7 @@ body.lock {
 
     /* FAQ */
     .faq {
-        padding-bottom: 9.4rem;
+        padding-bottom: 4.8rem;
         background-color: rgba(255, 201, 185, 0.2);
     }
 
@@ -772,7 +772,29 @@ body.lock {
         transform: rotate(180deg);
     }
 
+    .footer{
+        padding: 4.8rem 0 9.6rem 0;
+        background-color: #FEFEF6;
+    }
 
+    .footer .social {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2.4rem;
+    }
+
+    .footer .social a {
+        font-weight: 700;
+        font-size: 1.6rem;
+        color: rgba(44, 110, 73, 0.7);
+    }
+
+    .footer .all-rights {
+        text-align: center;
+        font-size: 1rem;
+        color: rgba(19, 22, 20, 0.4);
+
+    }
 
 }
 

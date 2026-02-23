@@ -704,20 +704,37 @@ body.lock {
 
     /* FAQ */
     .faq {
-        margin-bottom: 9.4rem;
-        background-color: rgba(255, 201, 185, 0.1);
+        padding-bottom: 9.4rem;
+        background-color: rgba(255, 201, 185, 0.2);
+    }
+
+    .faq .faq-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .faq .faq-block {
+        width: 100%;
+        height: auto;
+        background-color: #FFFFFF;
+        border-radius: 1.6rem;
+        
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
     .faq button {
+        width: 100%;
+        padding: 2rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
-        height: 6.4rem;
+        height: auto;
         background-color: #FFFFFF;
-        border-radius: 1.6rem;
         border: none;
-        padding: 0 2rem;
+        cursor: pointer;
+        border-radius: 1.6rem;
     }
 
     .faq button h2 {
@@ -728,6 +745,34 @@ body.lock {
     .faq button svg path {
         stroke: #131614;
     }
+
+    .answear {
+        overflow: hidden;
+        padding: 0 2rem;
+        max-height: 0;
+        transition: max-height 0.35s ease, opacity 0.25s ease;
+        opacity: 0;
+    }
+
+    .answear.open {
+        opacity: 1;
+        padding-bottom: 2rem;
+    }
+
+    .answear p {
+        font-size: 1.2rem;
+        color: #131614;
+    }
+
+    .question svg {
+        transition: transform 0.3s ease;
+    }
+
+    .question.open svg {
+        transform: rotate(180deg);
+    }
+
+
 
 }
 
